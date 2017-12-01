@@ -8,6 +8,7 @@ $primary-color: #02CAA0;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	flex-wrap: wrap;
 	.circ-shape {
 		border-radius: 50%;
 		background-color: $primary-color;
@@ -36,4 +37,16 @@ $primary-color: #02CAA0;
 .primary-color {
 	color: $primary-color;
 	font-weight: bold;
+}
+
+.rules {
+	margin-top: 120px;
+	a {
+		color: $primary-color;
+		font-size: 10px;
+		text-decoration: none;
+	}
+	img {
+		padding: 20px;
+	}
 }
