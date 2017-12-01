@@ -1,0 +1,32 @@
+.container {
+  margin-bottom: 60px; }
+
+.shape-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .shape-box .circ-shape {
+    border-radius: 50%;
+    background-color: #02CAA0;
+    padding: 16px 20px 20px 20px;
+    height: 80px;
+    width: 80px;
+    border: 0;
+    margin: 10px;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .shape-box .circ-shape i {
+      color: #fff; }
+    .shape-box .circ-shape .overlay {
+      font-size: 14px; }
+
+.picks .badge {
+  background-color: #02CAA0; }
+
+.primary-color {
+  color: #02CAA0;
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
