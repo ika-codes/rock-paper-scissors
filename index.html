@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<meta charset="UTF-8">
+		<title>Rock, Paper, Scissors, Lizard, Spock</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/style.prefixed.css">
+	</head>
+	<body>
+		<section class="container">
+			<div class="row text-center">
+	  			<h2>Welcome to the game of</h2>
+	  				<div class="shape-box">
+	  					<div class="circ-shape">
+  							<i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+  							<h6 class="label label-default overlay">Rock</h6>
+	  					</div>
+	  					<div class="circ-shape">
+  							<i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+  							<h6 class="label label-default overlay">Paper</h6>
+	  					</div>
+	  					<div class="circ-shape">
+  							<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+  							<h6 class="label label-default overlay">Scissors</h6>
+	  					</div>
+	  					<div class="circ-shape">
+  							<i class="fa fa-hand-lizard-o" aria-hidden="true"></i>
+  							<h6 class="label label-default overlay">Lizard</h6>
+	  					</div>
+	  					<div class="circ-shape">
+  							<i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+  							<h6 class="label label-default overlay">Spock</h6>
+	  					</div>
+	  				</div>
+			</div>
+		</section>
+		<section id="js-newGameElement" class="container">
+  			<div class="row text-center">
+    			<button id="js-newGameButton" class="btn btn-default btn-lg">New game</button>
+  			</div>
+		</section>
+		<section id="js-playerPickElement" class="container">
+			<div class="row text-center">
+				<button id="js-playerPick_rock" class="btn btn-default btn-lg picks">
+					<span class="badge">
+						<i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+					</span>
+					Rock
+				</button>
+				<button id="js-playerPick_paper" class="btn btn-default btn-lg picks">
+					<span class="badge">
+						<i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+					</span>
+					Paper
+				</button>
+				<button id="js-playerPick_scissors" class="btn btn-default btn-lg picks">
+					<span class="badge">
+						<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+					</span>
+					Scissors
+				</button>
+				<button id="js-playerPick_lizard" class="btn btn-default btn-lg picks">
+					<span class="badge">
+						<i class="fa fa-hand-lizard-o" aria-hidden="true"></i>
+					</span>
+					Lizard
+				</button>
+				<button id="js-playerPick_spock" class="btn btn-default btn-lg picks">
+					<span class="badge">
+						<i class="fa fa-hand-spock-o" aria-hidden="true"></i>
+					</span>
+					Spock
+				</button>
+			</div>
+		</section>
+		<section id="js-resultsTableElement" class="container">
+			<div class="row">
+				<div class="col-xs-5 text-center">
+					<span id="js-playerPoints" class="badge">
+						0
+					</span>
+					<span id="js-playerName">
+						Player Name
+					</span>
+				</div>
+				<div class="col-xs-2 text-center">
+					<h4 class="primary-color">VS.</h4>
+				</div>
+				<div class="col-xs-5 text-center">
+					<span id="js-computerPoints" class="badge">
+						0
+					</span>
+						Computer
+    			</div>
+  			</div>
+			<div class="row">
+				<div class="col-xs-5 text-center">
+					<span id="js-playerPick" class="primary-color">
+						Player selection
+					</span>
+				</div>
+				<div class="col-xs-2"></div>
+				<div class="col-xs-5 text-center">
+				<span id="js-computerPick" class="primary-color">
+					Computer selection
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-5 text-center">
+				<span id="js-playerResult" class="label label-default">
+					Player Score
+				</span>
+			</div>
+			<div class="col-xs-2"></div>
+				<div class="col-xs-5 text-center">
+					<span id="js-computerResult" class="label label-default">
+						Computer Score
+					</span>
+				</div>
+			</div>
+		</section>
+		<section class="container rules">
+			<div class="row text-center">
+				<a href="https://www.youtube.com/watch?v=XQhIsKZokHU" target="_blank">Rules for the game Rock, Paper, Scissors, Lizard, Spock</a><br>
+				<img src="images/logo.png" class="logo" alt="ika-codes">
+			</div>
+		</section>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</body>
+</html>
