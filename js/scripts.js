@@ -92,24 +92,24 @@ function checkRoundWinner(playerPick, computerPick) {
 
 	var winnerIs = 'player';
 
-    if (playerPick == computerPick) {
+    if (playerPick === computerPick) {
         winnerIs = 'noone'; // remis
     } else if (
-		(computerPick == 'rock' &&  (playerPick == 'scissors' || playerPick == 'lizard')) ||
-		(computerPick == 'scissors' &&  (playerPick == 'paper' || playerPick == 'lizard')) ||
-		(computerPick == 'paper' &&  (playerPick == 'rock' || playerPick == 'Spock')) ||
-		(computerPick == 'lizard' &&  (playerPick == 'Spock' || playerPick == 'paper')) ||
-		(computerPick == 'Spock' &&  (playerPick == 'scissors' || playerPick == 'rock'))) {
+		(computerPick === 'rock' &&  (playerPick === 'scissors' || playerPick === 'lizard')) ||
+		(computerPick === 'scissors' &&  (playerPick === 'paper' || playerPick === 'lizard')) ||
+		(computerPick === 'paper' &&  (playerPick === 'rock' || playerPick === 'Spock')) ||
+		(computerPick === 'lizard' &&  (playerPick === 'Spock' || playerPick === 'paper')) ||
+		(computerPick === 'Spock' &&  (playerPick === 'scissors' || playerPick === 'rock'))) {
 
         winnerIs = 'computer';
     }
 
-    if (winnerIs == 'player') {
+    if (winnerIs === 'player') {
         playerResultElem.innerHTML = "Win!";
         player.score++;
         setGamePoints();
 
-    } else if (winnerIs == 'computer') {
+    } else if (winnerIs === 'computer') {
         computerResultElem.innerHTML = "Win!";
         computer.score++;
         setGamePoints();
@@ -132,11 +132,11 @@ function setGamePoints() {
 }
 
 function checkGameWinner() {
-	if (player.score == 10 ) {
+	if (player.score === 10 ) {
 		alert('Congratulations! You won.');
 		gameState = 'ended';
 		setGameElements();
-	} else if (computer.score == 10) {
+	} else if (computer.score === 10) {
 		alert('Game over! Computer wins.');
 		gameState = 'ended';
 		setGameElements();
